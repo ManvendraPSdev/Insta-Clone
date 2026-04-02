@@ -1,0 +1,41 @@
+@use "./features/shared/button.scss";
+
+:root{
+    --bg-900: #0d1020;
+    --bg-800: #12162b;
+    --bg-700: #1a203a;
+    --text-100: #f6f7ff;
+    --text-300: #b7bdd8;
+    --primary-500: #ff477e;
+    --primary-600: #e83b70;
+    --border-soft: rgba(255, 255, 255, 0.12);
+    --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.45);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root{
+    width: 100%;
+    min-height: 100%;
+}
+
+body{
+    background:
+        radial-gradient(circle at 18% 12%, rgba(255, 71, 126, 0.2), transparent 32%),
+        radial-gradient(circle at 80% 0%, rgba(94, 114, 235, 0.22), transparent 35%),
+        linear-gradient(180deg, var(--bg-900) 0%, #11152b 100%);
+    color: var(--text-100);
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    line-height: 1.5;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
